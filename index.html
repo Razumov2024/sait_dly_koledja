@@ -19,7 +19,7 @@
                 <li>BLOG</li>
         </div>
         <div class="chastspiska">
-            <p>SIGN IN</p>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SIGN IN</button>
         </div>
         <div class="menu">
             <img src="img/Menu.png" alt="">
@@ -39,7 +39,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit, sed do eiusmod<br>tempor incididunt ut labore.</p>
     </div>
     <div class="hero-buttons">
-      <a href="#" class="btn-primary">Sign In</a>
+      <a href="#" class="btn-primary" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign In</a>
       <a href="#" class="btn-link">Read More</a>
     </div>
   </div>
@@ -86,11 +86,29 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>ipsum dolor sit adipisicing elit.</p>
         <a href="#" class="btn">Read More</a>
     </div>
-     <!-- продолжить завтра начиная с точек!!!! НАЧАЛО 2 ОТЧЕТА НИЖЕ ПОСЛЕ ЭТОЙ СТРОКИ -->
-</div>
-    <div class="dots">
-        <img src="img/Dots.png" alt="">
+    <div class="card1 card">
+        <img src="img/1Place Your Image Here (Double Click to Edit).png" alt="">
+        <h3>Lorem ipsum dolor sit amet <br> consectetur.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>ipsum dolor sit adipisicing elit.</p>
+        <a href="#" class="btn">Read More</a>
     </div>
+    <div class="card3 card">
+        <img src="img/3Place Your Image Here (Double Click to Edit).png" alt="">
+        <h3>Lorem ipsum dolor sit amet <br> consectetur.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>ipsum dolor sit adipisicing elit.</p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+      <!-- продолжить завтра начиная с точек!!!! НАЧАЛО 2 ОТЧЕТА НИЖЕ ПОСЛЕ ЭТОЙ СТРОКИ -->
+</div>
     <section class="hero2">
   <div class="hero-content2">
     <div class="side-text left">THE NEW ERA IS HERE</div>
@@ -128,6 +146,37 @@
       <div class="niz1"><img src="img/Star 2.png" alt="Star Bottom"></div>
     </div>
   </div>
+</div>
+
+<!-- ФОРМА РЕГИСТР -->
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img/o.6026.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
 </div>
 
 
