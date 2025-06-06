@@ -1636,6 +1636,12 @@ footer {
 
 }
 
+@media (max-width: 375px){
+  .card img{
+    width: 80%;
+    height: 80%;
+  }
+}
 
 
 
