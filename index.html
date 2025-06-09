@@ -13,10 +13,26 @@
             <img src="img/Your logo.png" alt=""></img>
         </div>
         <div class="spisok">
-                <li>HOME</li>
-                <li>ABOUT</li>
-                <li>PRODUCTS</li>
-                <li>BLOG</li>
+                <div class="aaa">
+                  <a href="#hom">
+                    <li>HOME</li>
+                  </a>
+                </div>
+                <div class="aaa">
+                  <a href="#about">
+                    <li>ABOUT</li>
+                  </a>
+                </div>
+                <div class="aaa">
+                  <a href="#prod">
+                    <li>PRODUCTS</li>
+                  </a>
+                </div>
+                <div class="aaa">
+                  <a href="#fut">
+                    <li>BLOG</li>
+                  </a>
+                </div>
         </div>
         <div class="chastspiska">
             <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SIGN IN</button>
@@ -34,12 +50,12 @@
         <div class="niz"><img src="img/Star 2.png" alt=""></div>
     </div>
     <div class="centr">
-        <h1>MAKE EVERYTHING<br><span>FEEL EASIER</span></h1>
+        <h1 id="hom">MAKE EVERYTHING<br><span>FEEL EASIER</span></h1>
         <h2>KEEP YOUR HOUSE UNDER<br>YOUR CONTROL.</h2>
         <p>Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit, sed do eiusmod<br>tempor incididunt ut labore.</p>
     </div>
     <div class="hero-buttons">
-      <a href="#" class="btn-primary" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign In</a>
+      <a href="#" class="btn-primary" onclick="document.getElementById('id01').style.display='block'" style="width:auto; background-color: #000000;">Sign In</a>
       <a href="#" class="btn-link">Read More</a>
     </div>
   </div>
@@ -64,7 +80,7 @@
 </div>
 <div class="wrapper3">
     <img src="img/Star 1.png" alt="">
-    <h2>NEW PROMOS</h2>
+    <h2 id="prod">NEW PROMOS</h2>
     <img src="img/Star 2.png" alt="">
 </div>
 <div class="contain">
@@ -120,13 +136,72 @@
     <div class="side-text right">THE NEW ERA IS HERE</div>
   </div>
 </section>
+<!-- слайдер номмер 2 через джиикверииии -->
+<div class="jq-slider">
+    <div class="jq-slides-container">
+        <div class="jq-slide jq-active">
+            <img src="img/1Place Your Image Here (Double Click to Edit).png" alt="">
+            <div class="jq-slide-content">
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="jq-btn">Read More</a>
+            </div>
+        </div>
+        <div class="jq-slide">
+            <img src="img/2Place Your Image Here (Double Click to Edit).png" alt="">
+            <div class="jq-slide-content">
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="jq-btn">Read More</a>
+            </div>
+        </div>
+        <div class="jq-slide">
+            <img src="img/3Place Your Image Here (Double Click to Edit).png" alt="">
+            <div class="jq-slide-content">
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="jq-btn">Read More</a>
+            </div>
+        </div>
+        <div class="jq-slide">
+            <img src="img/2Place Your Image Here (Double Click to Edit).png" alt="">
+            <div class="jq-slide-content">
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="jq-btn">Read More</a>
+            </div>
+        </div>
+        <div class="jq-slide">
+            <img src="img/3Place Your Image Here (Double Click to Edit).png" alt="">
+            <div class="jq-slide-content">
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="jq-btn">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div class="jq-dots">
+        <span class="jq-dot jq-active"></span>
+        <span class="jq-dot"></span>
+        <span class="jq-dot"></span>
+        <span class="jq-dot"></span>
+        <span class="jq-dot"></span>
+    </div>
+</div>
+
+
+
+
+
+
+
 <div class="ourstory">
   <div class="leftt">
     <img src="img/PLANSHETPlace Your Image Here (Double Click to Edit).png" alt="Tablet">
   </div>
   <div class="rightt">
     <div class="hhh">
-      <h2>OUR STORY</h2>
+      <h2 id="about">OUR STORY</h2>
     </div>
     <div class="content-box">
       <p>
@@ -166,7 +241,7 @@
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
         
-      <button type="submit">Login</button>
+      <button type="submit" style="background-color: rgb(85, 225, 85);">Login</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
@@ -245,7 +320,7 @@
 <div class="kartochkii">
     <div class="head">
       <img src="img/Star 1.png" alt="">
-      <div class="zag"><h3>OUR HAPPY<br>CLIENTS</h3></div>
+      <div class="zag"><h3 id="fut">OUR HAPPY<br>CLIENTS</h3></div>
       <img src="img/Star 2.png" alt="">
     </div>
     <div class="group1">
@@ -388,6 +463,7 @@
     </div>
   </footer>
 </div>
+<script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

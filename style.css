@@ -28,6 +28,8 @@ body{
     width: 100%;
     display: flex;
     background: linear-gradient(135deg, #fde5e5 0%, #eaf5ff 100%);
+  position: fixed;
+  z-index: 999;
 }
 
 .yourlogo{
@@ -51,7 +53,16 @@ body{
     border-right: none;
 }
 
-.spisok ul, li{
+.spisok {
+    transition: all 0.3s ease;
+}
+.spisok.fixed {
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.spisok ul, li, .aaa{
     display: flex; 
     justify-content: center;
     align-items: center;
@@ -77,6 +88,10 @@ body{
     border: 1px solid #434343;
 }
 
+button{
+  background-color: transparent;
+}
+
 /* певрый блок */
 
 body {
@@ -89,6 +104,31 @@ body {
   width: 100%;
   height: 900px;
   background: white;
+  padding-top: 3%;
+}
+
+@media (max-width: 2560px){
+.hero {
+  padding-top: 3.9%;
+}
+}
+
+@media (max-width: 1440px){
+.hero {
+  padding-top: 6.8%;
+}
+}
+
+@media (max-width: 1024px){
+.hero {
+  padding-top: 158px;
+}
+}
+
+@media (max-width: 768px){
+.hero {
+  padding-top: 0%;
+}
 }
 
 .hero-left {
@@ -415,6 +455,80 @@ body {
 }
 }
 
+/* сладйер 2 */
+/* Основные стили слайдера */
+.jq-slider {
+    max-width: 800px; /* Уменьшил ширину для лучшей читаемости */
+    margin: 0 auto;
+    position: relative;
+    text-align: center; /* Центрируем содержимое */
+}
+
+.jq-slides-container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/* Слайды */
+.jq-slide {
+    display: none;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.jq-slide.jq-active {
+    display: block;
+    animation: jq-fade 1.5s;
+}
+
+/* Контент внутри слайда */
+.jq-slide-content {
+    max-width: 600px;
+    margin: 0 auto; /* Центрируем текст и кнопки */
+    padding: 0 20px;
+}
+
+.jq-slide img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px; /* Центрируем изображение */
+}
+
+/* Точки-индикаторы */
+.jq-dots {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.jq-dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.jq-dot.jq-active, .jq-dot:hover {
+    background-color: #777;
+}
+
+/* Анимация перехода */
+@keyframes jq-fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 600px) {
+    .jq-slide-content {
+        padding: 0 10px;
+    }
+}
 
 
 
@@ -423,6 +537,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin-bottom: -50px;
 }
 
 .hero-content2 {
@@ -1636,12 +1751,35 @@ footer {
 
 }
 
-@media (max-width: 375px){
+@media (max-width: 425px){
   .card img{
-    width: 80%;
-    height: 80%;
+    width: 65%;
+    height: 65%;
+  }
+
+    .headerakrana h2{
+    font-size: 22px;
+  }
+
+  .prev{
+    left: 13%;
+  }
+
+  .next{
+    right: 13%;
   }
 }
+
+@media (max-width: 375px){
+  .prev{
+    left: 10%;
+  }
+
+  .next{
+    right: 10%;
+  }
+}
+
 
 
 
